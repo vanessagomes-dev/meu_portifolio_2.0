@@ -19,26 +19,21 @@
   </head>
 
   <body>
-    <!-- Barra de navegação  menu responsivo para telas pequenas (hamburguer)  -->
-    <nav class="navigation">
-      <!-- Botão de menu responsivo (hamburguer) para telas pequenas -->
+    <header class="navigation">
       <div class="menu-icon-wrapper">
-        <button class="menu-icon-btn" id="menu-toggler">
+        <button class="menu-icon-btn" id="menu-toggle">
           <span></span>
           <span></span>
           <span></span>
         </button>
       </div>
-
-      <!-- Itens do menu -->
-      <div class="nav-items" id="nav-menu">
-        <a href="#home" class="nav-item">Home</a>
-        <a href="#about" class="nav-item">Sobre</a>
-        <a href="#skills" class="nav-item">Skills</a>
-        <a href="#projects" class="nav-item">Projetos</a>
-        <a href="#contact" class="nav-item">Contato</a>
-      </div>
-    </nav>
+      <nav class="nav-items sidebar" id="nav-menu">
+        <a href="#about">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
 
     <!------------------------ Section Landing/Home------------------------------>
     <section class="landing" id="home">
@@ -226,159 +221,55 @@
       </div>
 
       <div class="skills-container">
-        <!-- Back-End Skills -->
-        <div class="skills-column back-end">
-          <div class="title-container">
-            <h3>Back-End</h3>
-            <div class="tenor-gif-container">
-              <!-- Gif back-end -->
-              <div
-                class="tenor-gif-embed"
-                data-postid="15088292"
-                data-share-method="host"
-                data-aspect-ratio="1"
-                data-width="50"
-              >
-                <a
-                  href="https://tenor.com/pt-BR/view/wtf-mate-wtf-is-that-emoji-angry-mind-blown-gif-15088292"
-                  >Excited Yes Sticker</a
-                >
-              </div>
-              <!--fim Gif back-end-->
-            </div>
-            <!-- fim tenor-gif -->
-          </div>
-          <!-- fim title container -->
-
-          <div class="container">
-            <!-- inicio container back-end -->
-
-            <div class="skill-box">
-              <span class="title">Python</span>
-              <div class="skill-bar">
-                <span class="skill-per python">
-                  <span class="tooltip">30%</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="skill-box">
-              <span class="title">Java</span>
-              <div class="skill-bar">
-                <span class="skill-per java">
-                  <span class="tooltip">10%</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="skill-box">
-              <span class="title">PHP</span>
-              <div class="skill-bar">
-                <span class="skill-per php">
-                  <span class="tooltip">30%</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="skill-box">
-              <span class="title">Node.js</span>
-              <div class="skill-bar">
-                <span class="skill-per nodejs">
-                  <span class="tooltip">35%</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="skill-box">
-              <span class="title">Sql, MySql</span>
-              <div class="skill-bar">
-                <span class="skill-per sqlmysql">
-                  <span class="tooltip">20%</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <!-- fim skill coluna back-end-->
+        <!-- Front-End -->
+        <div class="skills-column">
+          <h3><i class="fa-solid fa-code"></i> Front-End</h3>
+          <ul class="skills-list">
+            <li><i class="fa-brands fa-html5"></i> HTML5</li>
+            <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+            <li><i class="fa-brands fa-js"></i> JavaScript / TypeScript</li>
+            <li><i class="fa-brands fa-react"></i> React / Next.js</li>
+            <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
+            <li><i class="fa-brands fa-angular"></i> Angular</li>
+          </ul>
         </div>
-        <!-- fim container back-end -->
 
-        <!-- Front-End Skills -->
-        <div class="skills-column front-end">
-          <div class="title-container">
-            <h3>Front-End</h3>
-            <div class="tenor-gif-container">
-              <!-- Gif front-end-->
-              <div
-                class="tenor-gif-embed"
-                data-postid="7824812"
-                data-share-method="host"
-                data-aspect-ratio="1"
-                data-width="50"
-              >
-                <a
-                  href="https://tenor.com/pt-BR/view/music-emoji-headset-gif-7824812"
-                  >Excited Yes Sticker</a
-                >
-              </div>
-              <!-- fim Gif container -->
-            </div>
-            <!--fim gif front-end -->
-          </div>
-          <!-- fim titulo container-->
-
-          <div class="container">
-            <!-- inicio container front-end-->
-
-            <div class="skill-box">
-              <span class="title">HTML</span>
-              <div class="skill-bar">
-                <span class="skill-per html">
-                  <span class="tooltip">70%</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="skill-box">
-              <span class="title">CSS</span>
-              <div class="skill-bar">
-                <span class="skill-per css">
-                  <span class="tooltip">70%</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="skill-box">
-              <span class="title">JavaScript</span>
-              <div class="skill-bar">
-                <span class="skill-per javascript">
-                  <span class="tooltip">50%</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="skill-box">
-              <span class="title">Bootstrap</span>
-              <div class="skill-bar">
-                <span class="skill-per bootstrap">
-                  <span class="tooltip">50%</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="skill-box">
-              <span class="title">React</span>
-              <div class="skill-bar">
-                <span class="skill-per react">
-                  <span class="tooltip">40%</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <!-- fim coluna front-end-->
+        <!-- Back-End + Banco de Dados -->
+        <div class="skills-column">
+          <h3>
+            <i class="fa-solid fa-database"></i> Back-End & Banco de Dados
+          </h3>
+          <ul class="skills-list">
+            <li><i class="fa-brands fa-php"></i> PHP (Laravel)</li>
+            <li><i class="fa-brands fa-python"></i> Python</li>
+            <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+            <li><i class="fa-solid fa-database"></i> MySQL / SQL</li>
+            <li><i class="fa-solid fa-database"></i> MongoDB (NoSQL)</li>
+          </ul>
         </div>
-        <!--fim skills front-end-->
+
+        <!-- Ferramentas -->
+        <div class="skills-column">
+          <h3><i class="fa-solid fa-toolbox"></i> Ferramentas</h3>
+          <ul class="skills-list">
+            <li><i class="fa-brands fa-git-alt"></i> Git / GitHub / GitLab</li>
+            <li><i class="fa-brands fa-docker"></i> Docker</li>
+            <li><i class="fa-solid fa-vial"></i> TestLink (Testes Manuais)</li>
+            <li><i class="fa-solid fa-diagram-project"></i> Jenkins (CI/CD)</li>
+            <li><i class="fa-solid fa-paintbrush"></i> Figma</li>
+            <li><i class="fa-solid fa-plug"></i> Postman / Insomnia</li>
+          </ul>
+        </div>
+
+        <!-- Metodologias -->
+        <div class="skills-column">
+          <h3><i class="fa-solid fa-users"></i> Metodologias</h3>
+          <ul class="skills-list">
+            <li><i class="fa-solid fa-check"></i> Scrum</li>
+            <li><i class="fa-solid fa-tasks"></i> Kanban</li>
+          </ul>
+        </div>
       </div>
-      <!-- fim container skills-->
     </section>
 
     <!---------------------- Section Projects ------------------------------------->
