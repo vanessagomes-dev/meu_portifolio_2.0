@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Animação das letras do banner
 let words = document.querySelectorAll(".word");
+
 words.forEach((word) => {
   let letters = word.textContent.split("");
   word.textContent = "";
@@ -48,6 +49,7 @@ let changeText = () => {
   });
 
   nextWord.style.opacity = "1";
+
   Array.from(nextWord.children).forEach((letter, i) => {
     letter.className = "letter behind";
     setTimeout(() => {
@@ -60,6 +62,8 @@ let changeText = () => {
 };
 
 setInterval(changeText, 3000);
+
+
 
 // Configuração do botão de envio do Formspree
 window.formbutton =

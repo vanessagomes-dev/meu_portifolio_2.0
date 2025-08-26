@@ -162,29 +162,40 @@ section::after {
 --------------------------------------*/
 .landing {
   width: 100%;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px); /* ocupa toda altura visível menos o header */
   position: relative;
   z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  overflow: hidden; /* remove scrolls extras */
 }
+
 .container-banner {
   position: relative;
   width: 100%;
-  max-width: 500px;
-  background: #fff;
-  margin: 0 15px;
-  padding: 20px 10px;
+  max-width: 1200px;   /* centralizado sem limitar demais */
+  margin: 0 auto;      /* centraliza no eixo horizontal */
   border-radius: 7px;
+  padding: 20px;
+  box-sizing: border-box;
 }
+
 .banners {
-  position: relative;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 40px auto;
-  gap: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;  /* quebra em telas menores */
+  gap: 3rem;        /* reduzido para evitar ultrapassar */
+  width: 100%;
 }
+
 .developer-info {
-  margin-right: 16rem;
+  flex: 1;
+  max-width: 600px;
 }
+
 .greeting {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -206,8 +217,7 @@ h3 {
 }
 .name {
   font-size: 6rem;
-  max-width: 100%;
-  word-wrap: break-word;
+  width: 60rem;
   margin: 4rem 0 2rem 0;
   color: #a567b5;
   text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
@@ -234,6 +244,7 @@ h3 {
   opacity: 0;
   color: #a567b5;
 }
+
 .change-text h3 .word .letter {
   transform-origin: center center 25px;
 }
@@ -258,10 +269,15 @@ h3 {
 }
 .btn-info {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  justify-content: flex-start; /* alinha à esquerda */
+  flex-wrap: wrap;             /* quebra linha se faltar espaço */
+  gap: 20px;                   /* diminui espaçamento */
   margin-top: 20px;
+  width: 100%;                 /* evita ultrapassar container */
+  overflow: hidden;            /* corta sobras */
 }
+
+/* Mantém estilo dos links */
 .btn-info a {
   text-decoration: none;
 }
@@ -285,17 +301,24 @@ h3 {
   transform: scale(1.05);
 }
 .header-right {
+  flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 100%;      /* não deixa estourar largura */
+  overflow: hidden;     /* corta qualquer sobra */
 }
 .circle {
-  height: 55rem;
-  width: 55rem;
+  height: 40rem;        /* reduzido de 55rem */
+  width: 40rem;
+  max-width: 90%;       /* adapta à tela */
+  max-height: 90%;
   border-radius: 50%;
   border: 1px solid #5a3d73;
   position: relative;
-  animation: circleAnim linear infinite 20s;
+  animation: circleAnim 20s linear infinite;
+  overflow: hidden;
 }
 @keyframes circleAnim {
   to {
@@ -318,6 +341,7 @@ h3 {
   position: absolute;
   transition: 0.4s ease;
 }
+
 .circle a:hover {
   background: #5a3d73;
   color: #fff;
@@ -895,7 +919,7 @@ textarea {
     flex-direction: column;
     position: fixed;
     top: 0;
-    right: -250px; 
+    right: -250px;
     width: 250px;
     height: 100%;
     background-color: #5a3d73;
