@@ -1000,7 +1000,49 @@ textarea {
     margin: 0 auto;
     text-align: center;
   }
+   .project-card {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+    max-height: 18rem;
+  }
+
+  .techs {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .techs span {
+    font-size: 1.2rem;
+  }
+
+  .project-name {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .project-desc {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: .5rem;
+  }
+
+  .project-btn {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
+
 
 @media (max-width: 480px) {
   html {
@@ -1041,7 +1083,22 @@ textarea {
   }
 
   .project-card {
-    width: 100%;
-    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  .project-name {
+    font-size: 1.8rem;
+  }
+
+  .project-desc {
+    font-size: 1.4rem;
+  }
+
+  .techs span {
+    font-size: 1rem;
+  }
+
+  .project-btn {
+    font-size: 1.2rem;
   }
 }
